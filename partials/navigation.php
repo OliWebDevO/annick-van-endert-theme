@@ -75,9 +75,9 @@
                             </li>
                         </ul>
                     </li>
-                    <!--<li class="main-li">
+                    <li class="main-li">
                         <a class="link" href="<?php bloginfo("url")?>/news">News</a>
-                    </li>-->
+                    </li>
                     <li class="main-li">
                         <a class="link" href="<?php bloginfo("url")?>/livredor">Livre d'or</a>
                     </li>
