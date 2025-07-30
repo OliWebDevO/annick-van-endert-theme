@@ -61,6 +61,7 @@
                             </li>
                             <li>
                                 <a  class="link" href="<?php bloginfo("url")?>/about#artsenic">Artsenic</a>
+                
                             </li>
                         </ul>
                     </li>
