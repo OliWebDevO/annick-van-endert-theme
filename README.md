@@ -5,6 +5,7 @@
   
   **A custom WordPress theme showcasing artistic portfolio with modern interactions**
   
+  [![Live Website](https://img.shields.io/badge/Live%20Website-annickvanendert.com-orange?style=for-the-badge&logo=firefox)](https://annickvanendert.com)
   [![WordPress](https://img.shields.io/badge/WordPress-Custom%20Theme-21759B?style=for-the-badge&logo=wordpress)](https://wordpress.org/)
   [![PHP](https://img.shields.io/badge/PHP-8.0+-777BB4?style=for-the-badge&logo=php)](https://php.net/)
   [![SCSS](https://img.shields.io/badge/SCSS-Architecture-CF649A?style=for-the-badge&logo=sass)](https://sass-lang.com/)
