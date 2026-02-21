@@ -92,6 +92,13 @@ if (navBurger) {
     document.body.classList.toggle('menu-open');
   });
 }
+document.querySelectorAll('.b-nav .main-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    mainMenu.classList.remove('bactive');
+    navBurger.classList.remove('burger-active');
+    document.body.classList.remove('menu-open');
+  });
+});
 // Back to top
 
 let backToTop = document.querySelector('.back-to-top')
