@@ -41,7 +41,11 @@ const sliderEl = document.querySelector('.fashion-slider');
 const fashionSwiper = createFashionSlider(sliderEl);
 
 window.addEventListener('load', () => {
-  document.body.classList.add('loaded');
+  const preloader = document.querySelector('.preloader');
+  if (preloader) {
+    preloader.classList.add('fade-out');
+    preloader.addEventListener('transitionend', () => preloader.remove());
+  }
 });
 
 const nextArrow = document.querySelector('.fashion-slider-button-next');

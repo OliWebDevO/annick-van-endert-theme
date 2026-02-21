@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>body:not(.loaded){opacity:0;background:#000}</style>
-    <link rel="stylesheet" href="<?php bloginfo("template_url")?>/styles/styles.css?v=1.0">
+    <link rel="stylesheet" href="<?php bloginfo("template_url")?>/styles/styles.css">
+    <style>
+      .preloader{position:fixed;top:0;left:0;width:100%;height:100%;background:#000;z-index:99999;display:flex;justify-content:center;align-items:center;transition:opacity .4s ease}
+      .preloader.fade-out{opacity:0;pointer-events:none}
+      .preloader-spinner{width:40px;height:40px;border:3px solid rgba(255,166,0,.2);border-top-color:orange;border-radius:50%;animation:spin .8s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+    </style>
       <!-- Google Web Fonts -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

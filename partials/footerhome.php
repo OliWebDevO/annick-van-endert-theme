@@ -80,7 +80,7 @@
             </div>
         </div>
     </footer>
-    <script defer src="<?php bloginfo("template_url")?>/scripts/mainslider.js?<?php echo time(); ?>"></script>
+    <script defer src="<?php bloginfo("template_url")?>/scripts/mainslider.js"></script>
 	<script defer src="<?php bloginfo("template_url")?>/scripts/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="<?php bloginfo("template_url")?>/plugins/wow.js/dist/wow.min.js"></script>

@@ -34,7 +34,11 @@ requestAnimationFrame(raf);
 new WOW().init();
 
 window.addEventListener('load', () => {
-  document.body.classList.add('loaded');
+  const preloader = document.querySelector('.preloader');
+  if (preloader) {
+    preloader.classList.add('fade-out');
+    preloader.addEventListener('transitionend', () => preloader.remove());
+  }
 });
 
 

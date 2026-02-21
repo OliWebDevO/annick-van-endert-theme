@@ -1,5 +1,6 @@
 
 <body>
+    <div class="preloader"><div class="preloader-spinner"></div></div>
     <header>
         <div class="top-bar">
             <div class="breadcrumb">
