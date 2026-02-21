@@ -40,6 +40,10 @@ new WOW().init();
 const sliderEl = document.querySelector('.fashion-slider');
 const fashionSwiper = createFashionSlider(sliderEl);
 
+window.addEventListener('load', () => {
+  document.body.classList.add('loaded');
+});
+
 const nextArrow = document.querySelector('.fashion-slider-button-next');
 if (nextArrow) {
   nextArrow.classList.add('arrow-attract');

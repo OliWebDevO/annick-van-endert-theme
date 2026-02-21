@@ -33,6 +33,10 @@ requestAnimationFrame(raf);
 // Wow Plugins start
 new WOW().init();
 
+window.addEventListener('load', () => {
+  document.body.classList.add('loaded');
+});
+
 
 
 
