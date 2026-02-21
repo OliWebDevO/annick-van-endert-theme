@@ -17,7 +17,7 @@ const lenis = new Lenis({
   // Valeur entre 0 et 1
   // Valeur par défaut : 0,1
   // Plus la valeur est faible, plus le scroll sera fluide
-  lerp: 0.15,
+  lerp: 0.1,
   // Valeur par défaut : 1
   // Plus la valeur est haute, plus le défilement sera rapide
   wheelMultiplier: 1.2,
@@ -64,15 +64,13 @@ window.addEventListener("scroll", function(){
 });   
 });
 let mainMenu = document.querySelector('.b-nav .main-menu');
-let burger = document.querySelectorAll('.burger');
- let bburger = document.querySelector('.b-nav .burger');
-burger.forEach(element => {
-  element.addEventListener('click', ()=>{
+let navBurger = document.querySelector('nav .burger');
+if (navBurger) {
+  navBurger.addEventListener('click', () => {
     mainMenu.classList.toggle('bactive');
-    bburger.classList.toggle('bbappear');
-    
-  })
-});
+    navBurger.classList.toggle('burger-active');
+  });
+}
 // Back to top
 
 let backToTop = document.querySelector('.back-to-top')

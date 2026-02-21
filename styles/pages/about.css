@@ -60,6 +60,7 @@
     .about-box {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 80px;
     }
     .grid-imgs {
         display: grid;
