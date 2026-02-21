@@ -69,6 +69,7 @@ if (navBurger) {
   navBurger.addEventListener('click', () => {
     mainMenu.classList.toggle('bactive');
     navBurger.classList.toggle('burger-active');
+    document.body.classList.toggle('menu-open');
   });
 }
 // Back to top

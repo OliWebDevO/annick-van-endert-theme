@@ -1,3 +1,9 @@
+body.menu-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
 /* TOP BAR */
     * {
         box-sizing: border-box;
@@ -169,6 +175,7 @@ nav {
         width: 100vw;
         z-index: 1000;
         transition: transform .35s ease-in-out;
+        overflow: hidden;
         padding: 100px 0 0;
         margin: 0;
         .main-li:first-child {
