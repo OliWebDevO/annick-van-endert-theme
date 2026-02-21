@@ -17,10 +17,10 @@ const lenis = new Lenis({
   // Valeur entre 0 et 1
   // Valeur par défaut : 0,1
   // Plus la valeur est faible, plus le scroll sera fluide
-  lerp: 0.08, 
+  lerp: 0.15,
   // Valeur par défaut : 1
-  // Plus la valeur est haute, plus le défilement sera rapide 
-  wheelMultiplier: 1, 
+  // Plus la valeur est haute, plus le défilement sera rapide
+  wheelMultiplier: 1.2,
 });
 
 function raf(time) {
@@ -38,8 +38,22 @@ new WOW().init();
 //Fashion Swiper
 
 const sliderEl = document.querySelector('.fashion-slider');
+const fashionSwiper = createFashionSlider(sliderEl);
 
-createFashionSlider(sliderEl);
+const nextArrow = document.querySelector('.fashion-slider-button-next');
+if (nextArrow) {
+  nextArrow.classList.add('arrow-attract');
+  const swiperEl = document.querySelector('.fashion-slider .swiper');
+  if (swiperEl && swiperEl.swiper) {
+    swiperEl.swiper.on('transitionEnd', function (swiper) {
+      if (swiper.activeIndex === 0) {
+        nextArrow.classList.add('arrow-attract');
+      } else {
+        nextArrow.classList.remove('arrow-attract');
+      }
+    });
+  }
+}
 
 
 // END PLUGINS LINKS

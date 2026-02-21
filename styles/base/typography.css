@@ -1,0 +1,30 @@
+/* =============================================
+   Base Typography — Major Third (1.250)
+   ============================================= */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  line-height: var(--lh-heading);
+}
+
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+h4 { font-size: var(--fs-h4); }
+h5 { font-size: var(--fs-h5); }
+h6 { font-size: var(--fs-body); }
+
+p {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+}
+
+small {
+  font-size: var(--fs-small);
+}
