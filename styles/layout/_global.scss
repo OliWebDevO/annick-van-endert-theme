@@ -26,7 +26,10 @@ body {
         overflow-y: hidden;
     }
 }   
-a {
+.slidera {
+    text-decoration: none;
+}
+a:not(.slidera) {
     text-decoration: none;
     font-family: "Roboto", sans-serif;
 }
@@ -104,7 +107,7 @@ section {
     justify-content: center;
     align-items: center;
     h2 {
-        font-size: 50px;
+        font-size: $fs-h1;
         color: white;
 
     }
@@ -120,18 +123,18 @@ section {
 .h2 {
     color: black;
     font-family: "Playfair Display", serif;
-    font-size: 24px;
+    font-size: $fs-h4;
 }
 .paragraph-big {
     font-family: "Roboto", sans-serif;
-    font-size: 1.2rem;
-    line-height: 2rem;
+    font-size: $fs-h5;
+    line-height: $lh-body;
     text-align: justify;
 }
 .paragraph {
     font-family: "Roboto", sans-serif;
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: $fs-body;
+    line-height: $lh-body;
     text-align: justify;
 }
 .btn-1 {

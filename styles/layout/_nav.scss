@@ -165,7 +165,7 @@ nav {
             padding-right:30px;
             position: relative;
             a {
-                font-size: 30px;
+                font-size: $fs-h2;
             }
             &:hover {
                 .sub-menu {
@@ -185,7 +185,7 @@ nav {
                 a {
                     color: white;
                     font-family: "Roboto", sans-serif;
-                    font-size: 20px;
+                    font-size: $fs-h5;
                     transition: ease-in-out .5s;
                     &:hover {
                         color: orange;
@@ -237,12 +237,18 @@ nav {
     font-family: "Playfair Display", serif;
     color: orange;
     padding-left: 50px;
-    font-size: 22px;
+    font-size: $fs-h5;
+    .logo {
+        height: 60px;
+        width: 60px;
+        object-fit: cover;
+        object-position: center;
+    }
     a {
         font-family: "Playfair Display", serif;
     color: orange;
     padding-left: 50px;
-    font-size: 22px;
+    font-size: $fs-h5;
     &:hover{
         color: rgba(255, 166, 0, 0.88);
         transition: ease-in-out .3s;

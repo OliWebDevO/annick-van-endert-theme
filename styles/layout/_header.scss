@@ -75,7 +75,7 @@
     
     h1{
         color: white;
-        font-size: 80px;
+        font-size: $fs-display;
         margin: 20px 0;
     }
 
@@ -87,26 +87,38 @@
         p {
             color: white;
             font-family: "Roboto", sans-serif;
-            font-size: 1.2rem;
-            line-height: 2rem;
+            font-size: $fs-h5;
+            line-height: $lh-body;
             text-align: justify;
         }
     }
     @media (max-width: 768px) {
         padding-right: 50px;
-        h1 {
-            font-size: 32px;
-        }
         .h-p {
             width: 100%;
         }
-        
+
     }
-    @media (max-width: 420px) {
-        h1 {
-            font-size: 30px;
-        }
+}
+
+// Slider container
+.app {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fashion-slider {
+    --fashion-slider-title-font-size: 88px;
+}
+@media (max-width: 480px) {
+    .fashion-slider {
+        --fashion-slider-title-font-size: 60px;
     }
+}
+// Dark backdrop on slider nav buttons for visibility on light images
+.app .fashion-slider-button circle {
+    fill: rgba(19, 13, 5, 0.4);
 }
 
 @media (min-width: 768px) {

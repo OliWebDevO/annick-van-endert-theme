@@ -5,12 +5,12 @@
     h2 {
         margin-top: 0;
         font-family: "Playfair Display", serif;
-        font-size: 32px;
+        font-size: $fs-h2;
         color: orange;
     }
     h3 {
         font-family: "Playfair Display", serif;
-        font-size: 22px;
+        font-size: $fs-h4;
         color: orange;
     }
     span {
@@ -118,14 +118,14 @@
     margin-bottom: 5px;
     a {
         font-family: "Playfair Display", serif;
-        font-size: 20px;
+        font-size: $fs-h5;
     }
 }
 .latest_post_meta {
    margin-bottom: 30px;
     a {
         font-family: "Roboto", sans-serif;
-        font-size: 14px;
+        font-size: $fs-small;
     }
 }
 @media (max-width: 1050px) {
