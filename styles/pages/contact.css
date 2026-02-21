@@ -1,3 +1,7 @@
+.hidden-fields-container {
+    display: none;
+}
+
 .section-contact {
     height: 80vh;
     width: 100vw;
@@ -17,6 +21,11 @@
         color: orange;
         font-family: "Playfair Display", serif;
         font-size: var(--fs-h2);
+    }
+}
+@media (max-width: 1050px) {
+    .contact-box {
+        margin-top: 150px;
     }
 }
 .contact-title {

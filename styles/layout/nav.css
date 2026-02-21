@@ -225,9 +225,10 @@ nav {
     gap: 7px;
     z-index: 9999;
     cursor: pointer;
-    position: fixed;
-    top: 65px;
+    position: absolute;
     right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
     @media (min-width: 762px) {
       display: none;
     }

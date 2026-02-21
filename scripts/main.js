@@ -89,6 +89,26 @@ backToTop.addEventListener('click', ()=>{
   window.scrollTo({top: 0, behavior: "smooth"});
 })
 
+// Scroll to center grid-imgs when navigating to #annick or #artsenic
+function scrollToAboutSection() {
+  const hash = window.location.hash;
+  if (hash === '#annick' || hash === '#artsenic') {
+    const target = document.querySelector(hash);
+    if (target) {
+      const allImgs = target.querySelectorAll('.grid-imgs');
+      const imgs = Array.from(allImgs).find(el => el.offsetParent !== null) || allImgs[0];
+      if (imgs) {
+        const rect = imgs.getBoundingClientRect();
+        const scrollTop = window.scrollY + rect.top + rect.height / 2 - window.innerHeight / 2 - 50;
+        setTimeout(() => {
+          window.scrollTo({ top: scrollTop, behavior: 'smooth' });
+        }, 300);
+      }
+    }
+  }
+}
+scrollToAboutSection();
+window.addEventListener('hashchange', scrollToAboutSection);
 
 
 
