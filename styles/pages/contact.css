@@ -112,6 +112,12 @@
 
   }
 
+  #form-status {
+    text-align: center;
+    margin-top: 16px;
+    font-family: "Roboto", sans-serif;
+    font-size: var(--fs-body);
+  }
 
   .parrallax {
     height: 50vh;
