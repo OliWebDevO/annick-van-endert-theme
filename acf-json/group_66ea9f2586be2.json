@@ -1,0 +1,76 @@
+{
+    "key": "group_66ea9f2586be2",
+    "title": "Dates",
+    "fields": [
+        {
+            "key": "field_66ea9f25b40d4",
+            "label": "Jour",
+            "name": "jour",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66ea9f34b40d5",
+            "label": "Mois",
+            "name": "mois",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "news"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "livre-dor"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1726652228
+}
